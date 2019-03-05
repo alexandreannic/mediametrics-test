@@ -2,12 +2,12 @@
   "name": "mediametrics",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server.js",
+  "main": "dist/index.js",
   "scripts": {
     "build-ts": "tsc",
     "start": "npm run serve",
-    "serve": "node dist/server.js",
-    "watch-node": "nodemon dist/server.js",
+    "serve": "node --max-old-space-size=8192 dist/index.js",
+    "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w"
   },
   "author": "Alexandre Annic <alexandre.annci1@gmail.com>",
